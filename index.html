@@ -84,46 +84,36 @@
 
                 <section id="skills" class="panel reveal">
 					<h2>Skills Snapshot</h2>
-					<ul class="tag-list" aria-label="Skills list">
-						<li>Machine Learning (TensorFlow, PyTorch)</li>
-						<li>Computer Vision (OpenCV, scikit-image)</li>
-						<li>Agentic AI</li>
-						<li>Data Analysis (Pandas, NumPy)</li>
-						<li>Image Processing (ImageJ, Imaris)</li>
-						<li>Protein prediction (Boltz2)</li>
-						<li>Image Analysis</li>
-						<li>Deep Learning</li>
-						<li>Neural Networks</li>
-						<li>Python</li>
-						<li>Web Foundations</li>
-						<li>Git</li>
-						<li>Docker</li>
-						<li>Linux/Bash</li>
-						<li>Cloud Basics</li>
-						<li>Team Collaboration</li>
-						<li>Project Management</li>
-						<li>Model Training</li>
-						<li>R</li>
-						<li>Java</li>
-						<li>HTML/CSS</li>
-						<li>DevOps</li>
-						<li>LaTeX</li>
-						<li>GitHub</li>
-						<li>Basic Networking</li>
-						<li>Azure Cloud Computing</li>
-						<li>Microscopy Techniques (Widefield, Confocal, STED, TIRF, Expansion Microscopy)</li>
-						<li>Scientific Writing</li>
-						<li>Cell Culture</li>
-						<li>Protein Purification</li>
-						<li>Surface Functionalization</li>
-						<li>Western Blotting</li>
-						<li>Immunocytochemistry</li>
-						<li>Experimental Design</li>
-						<li>Protein Assays</li>
-						<li>Method Optimization</li>
-						<li>Automation</li>
-						<li>Microfluidics</li>
-					</ul>
+					<div class="skill-groups" aria-label="Skills grouped by category">
+						<div class="skill-group">
+							<h3>Data Analysis &amp;<br />Machine Learning</h3>
+							<p>Machine Learning (TensorFlow, PyTorch, scikit-learn), Data Analysis (Pandas, NumPy), Computer vision(scikit-image, OpenCV), Image Analysis, Image Processing (ImageJ, Imaris), Deep Learning (CNNs), Neural Networks, Model Training and Evaluation, Agentic AI, Protein Prediction (Boltz2)</p>
+						</div>
+						<div class="skill-group">
+							<h3>Programming &amp;<br />Tools</h3>
+							<p>Python, R, Java, LaTeX, Git, GitHub, Linux/Bash, Docker, HTML/CSS, DevOps,Automation, Basic Networking, Azure Cloud Computing</p>
+						</div>
+						<div class="skill-group">
+							<h3>Microscopy<br />Techniques</h3>
+							<p>Widefield, Epifluorescence, TIRF, Confocal, STED, Expansion Microscopy, ImageJ, Imaris</p>
+						</div>
+						<div class="skill-group">
+							<h3>Biological<br />Engineering</h3>
+							<p>Cell Culture, Protein Purification, Surface Functionalization, Western Blotting, Immunocytochemistry, Experimental Design, Protein Quantification Assays, Method Optimization, Microfluidics</p>
+						</div>
+						<div class="skill-group">
+							<h3>Soft Skills -<br />Personal Skills</h3>
+							<p>Agile Teamwork, Autonomy, Interdisciplinary Collaboration, Critical Thinking, Problem-solving, Leadership, Adaptability, Troubleshooting, Time Management, Self-motivated, Fast Learner, Resilient, Empathy, Project Management</p>
+						</div>
+						<div class="skill-group">
+							<h3>Communication</h3>
+							<p>Scientific Writing, Technical Documentation, Training, Presentation Skills, Interdisciplinary Communication</p>
+						</div>
+						<div class="skill-group">
+							<h3>Interests and<br />Hobbies</h3>
+							<p>Volleyball, Cycling, Swimming, Traveling, Home Lab</p>
+						</div>
+					</div>
 				</section>
 
 				<section id="projects" class="panel reveal">
@@ -150,8 +140,7 @@
 						<article class="card">
 							<h3>Energy and Prediction Models</h3>
 							<p>
-								Data exploration and forecasting prototypes to support decisions
-								around energy consumption and optimization.
+								Data exploration and forecasting prototypes to support decisions around energy consumption and optimization.
 							</p>
 						</article>
 						<article class="card">
@@ -177,9 +166,19 @@
 						>
 							<h3>Real-Time Face Emotion Detector</h3>
 							<p>
-								A real-time face emotion detection application using computer vision and deep learning techniques.
+								Real‑time inference pipeline (Python, OpenCV, TensorFlow/Keras, Pytorch) classifying live video signal using VGG16/ResNet18 architectures.
 							</p>
 						</a>
+						<a
+							class="card card-project card-clickable"
+							target="_blank"
+							rel = "noreferrer noopener"
+						>
+							<h3>Synaptic vesicle - microtubule interface explorer </h3>
+							<p>
+								 Computational structural biology pipeline combining Boltz2 multi‑chain structure prediction with ESM‑based sequence and variant scoring, designed to evaluate candidate tubulin‑interacting regions from synaptic vesicle‑associated proteins (alpha‑synuclein, synapsin1). STILL IN PROGRESS, NOT YET PUBLIC.
+							</p>
+					</a>
 						<a
 							class="card card-project card-clickable"
 							href="https://github.com/TiagoMimoso/Aggregation_analysis"
@@ -188,7 +187,7 @@
 						>
 							<h3>Aggregation_analysis</h3>
 							<p>
-								Aggregation_analysis is a research codebase developed for a Master Thesis project focused on segmentation and analysis of cellular aggregates across multiple microscopy modalities (Confocal, STED and Expansion Microscopy).
+								Aggregation_analysis is a research codebase developed for a Master Thesis project. Deep‑learning pipeline (Python,StarDist) for feature extraction and quantification from noisy, heterogeneous multimodal imaging data (confocal, STED, expansion microscopy), where signal quality varied substantially across acquisition modality.
 							</p>
 						</a>
 						<a
@@ -199,7 +198,7 @@
 						>
 							<h3>Guess Animal</h3>
 							<p>
-								Interactive Python mini-project focused on logic flow and playful UX.
+								Interactive application powered by a locally‑hosted LLM (Ollama, Qwen2.5) running entirely on local hardware with no cloud dependency.
 							</p>
 						</a>
 						<a
@@ -221,7 +220,7 @@
 						>
 							<h3>Finance Tracker</h3>
 							<p>
-								A simple finance tracking application built with Python (Flask) and deployment for home networking.
+								Full‑stack web application with Flask REST API backend, database layer, and containerized deployment (Docker Compose).
 							</p>
 						</a>
 						

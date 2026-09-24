@@ -383,6 +383,37 @@ h1 {
   font-size: 0.9rem;
 }
 
+.skill-groups {
+  display: grid;
+  gap: 0;
+}
+
+.skill-group {
+  display: grid;
+  grid-template-columns: minmax(150px, 22%) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.skill-group:first-child {
+  border-top: 0;
+  padding-top: 0.2rem;
+}
+
+.skill-group h3 {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: var(--ink);
+  text-align: right;
+}
+
+.skill-group p {
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
 .hobby-grid {
   margin-top: 0.3rem;
 }
@@ -553,5 +584,21 @@ h1 {
 
   .quick-links {
     grid-template-columns: 1fr;
+  }
+
+  .skill-group {
+  grid-template-columns: minmax(125px, 28%) minmax(0, 1fr);
+  gap: 0.75rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .skill-group {
+    display: block;
+  }
+
+  .skill-group h3 {
+    margin-bottom: 0.25rem;
+    text-align: left;
   }
 }
